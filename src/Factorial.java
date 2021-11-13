@@ -13,16 +13,16 @@ public class Factorial {
         printFactorial(factorialNum(numToFactorial));
     }
 
-    static void printFactorial (int factorial){
+    static void printFactorial (long factorial){
 
         System.out.println("The factorial of the entered number is: " + factorial);
     }
 
-      static public int factorialNum (int numToFactorial){
+      static public long factorialNum (long numToFactorial){
 
-          int factorial = 1;
+          long factorial = 1;
 
-          for (int i = numToFactorial; i > 0; i--) {
+          for (long i = numToFactorial; i >= 1; i--) {
               factorial *= i;
           }
         return factorial;
